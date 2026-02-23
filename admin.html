@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="login-box" id="loginBox">
+  <h2>Admin Login</h2>
+  <input type="text" id="adminId" placeholder="Enter ID">
+  <input type="password" id="adminPass" placeholder="Enter Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div class="dashboard" id="dashboard" style="display:none;">
+  <h2>Contact Messages</h2>
+  <button onclick="logout()">Logout</button>
+  <div id="messages"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
