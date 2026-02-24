@@ -152,6 +152,10 @@
       padding: 20px;
       background: #000;
     }
+    .hero .btn,
+.hero a {
+  cursor: default !important;
+}
   </style>
 </head>
 <body>
@@ -169,7 +173,14 @@
   <div class="hero">
     <h1>Hi, I'm Ashpreet </h1>
     <p>Creative Web Developer | HTML • CSS • JavaScript</p>
-    <button class="btn" onclick="scrollToSection('about')">Explore</button>
+   <div style="display:flex;gap:15px;justify-content:center;flex-wrap:wrap;">
+  <button class="btn" onclick="scrollToSection('about')">Explore</button>
+
+  <!-- Main Project Button -->
+  <a href="flavorfleet.html" target="_blank" class="btn" style="text-decoration:none;display:inline-block;">
+    View My Main Project 🚀
+  </a>
+</div>
   </div>
 </header>
 
@@ -302,4 +313,5 @@ function submitForm(e){
   e.target.reset();
 }
 </script>
+
 
